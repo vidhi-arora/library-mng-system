@@ -224,7 +224,8 @@ route.get('/searchby/isbn/:key', async (req, res) => {
 
 route.post('/delete-issue', async (req, res) => {
     const { isbn } = req.body;
-    if (!isbn) res.send("invalid book");
+    if (!isbn)
+        return res.send("invalid book");
 
     console.log(isbn);
     try {
@@ -291,7 +292,8 @@ route.post('/delete-issue', async (req, res) => {
 
 route.post('/request', async (req, res) => {
     const { bookName, author } = req.body;
-    if (!bookName || !author) res.send("wrong info");
+    if (!bookName || !author)
+        return res.send("wrong info");
     // console.log(req.user.name);
     try {
         const request = new RequestedBooks({ name: bookName, author, requestedOn: getDate(), userId: req.user._id })
@@ -356,7 +358,9 @@ route.get('/getuserrequests', async (req, res) => {
 
 route.post('/addbook', async (req, res) => {
     const { image, name, author, book_depository_stars, isbn, category, pages, publisher } = req.body;
-    if (!image || !name || !author || !book_depository_stars || !isbn || !category || !pages || !publisher) return res.send("invalid request");
+    if (!image || !name || !author || !book_depository_stars || !isbn || !category || !pages || !publisher)
+        return res.send("invalid request");
+
     try {
         const new_book = await new Books({ image, name, author, book_depository_stars, isbn, category, pages, publisher });
         await new_book.save();
@@ -369,7 +373,9 @@ route.post('/addbook', async (req, res) => {
 
 route.post('/deletebook', async (req, res) => {
     const { isbn } = req.body;
-    if (!isbn) return res.send("invalid isbn");
+    if (!isbn)
+        return res.send("invalid isbn");
+
     try {
         const isIssued = await IssuedBooks.findOne({ isbn });
         if (isIssued === null) {

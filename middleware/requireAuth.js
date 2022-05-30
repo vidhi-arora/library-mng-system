@@ -13,13 +13,14 @@ const secret = process.env.SECRET || 'LIBRARY';
 
 module.exports = (req, res, next) => {
     const { authorization } = req.headers;
+    console.log(req.body);
     // req.send(req.headers);
 
     res.send(`auth = ${authorization}`);
 
     if (!authorization) {
         console.log("urgh!");
-        res.status(422).send({ error: "you must be Logged in" });
+        return res.status(422).send({ error: "you must be Logged in" });
     }
     try {
         const token = authorization.replace('Bearer ', '');
@@ -31,6 +32,7 @@ module.exports = (req, res, next) => {
             const user = await User.findById(userId);
 
             req.user = user;
+            res.end();  //important
 
             next();
         });

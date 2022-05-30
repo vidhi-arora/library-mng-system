@@ -42,7 +42,8 @@ route.post('/login', async (req, res) => {
     const { loginEmail, loginPassword } = req.body;
     const Email = loginEmail.toLowerCase();
 
-    if (!loginEmail || !loginPassword) return res.status(422).send("invalid email or password");
+    if (!loginEmail || !loginPassword)
+        return res.status(422).send("invalid email or password");
 
     // const lwr_email = email.toLowerCase();
     const user = await User.findOne({ email: Email });
