@@ -13,10 +13,10 @@ const secret = process.env.SECRET || 'LIBRARY';
 
 module.exports = (req, res, next) => {
     const { authorization } = req.headers;
-    console.log(req.body);
+    // console.log(req.body);
     // req.send(req.headers);
 
-    res.send(`auth = ${authorization}`);
+    // return res.send(`auth = ${authorization}`);
 
     if (!authorization) {
         console.log("urgh!");
