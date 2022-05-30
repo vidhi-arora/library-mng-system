@@ -16,7 +16,7 @@ const mongoose = require('mongoose');
 const authroutes = require('./Routes/authRoutes');
 const userRoutes = require('./Routes/userRoutes');
 const bodyparse = require('body-parser');
-const cors = require('cors');
+// const cors = require('cors');
 
 const app = express();
 
@@ -27,7 +27,7 @@ const port = process.env.PORT || 3500;
 // };
 
 app.use(bodyparse.json());
-app.use(cors());
+// app.use(cors());
 
 app.use(authroutes);
 app.use(userRoutes);
@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === "production") {
 
     app.use(express.static("client/build"));
 
-    app.get("/", (req, res) => {
+    app.get("*", (req, res) => {
         res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
     });
 }
