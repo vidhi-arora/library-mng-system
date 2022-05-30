@@ -46,7 +46,7 @@ export const Home = () => {
         }
         catch (e) {
             toast.error("Invalid email or password");
-            console.log(e.response);
+            console.log(e);
         }
     }
 
