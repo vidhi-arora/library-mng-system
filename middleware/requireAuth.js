@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken');
 const User = mongoose.model('User');
 const express = require('express');
 
-const secret = process.env.SECRET || 'LIBRARY';
+const secret = process.env.SECRET;
 
 module.exports = (req, res, next) => {
     const { authorization } = req.headers;
