@@ -55,6 +55,7 @@ route.post('/login', async (req, res) => {
     try {
         await user.comparePasswords(loginPassword);
         const token = jwt.sign({ userId: user._id }, secret);
+        console.log(`token = ${token}`);
         return res.send({ user, token });
     }
     catch (err) {
