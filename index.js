@@ -29,8 +29,9 @@ const port = process.env.PORT || 3500;
 app.use(bodyparse.json());
 // app.use(cors());
 
-app.use('/api/login', '/api/signup', authroutes);
-app.use(userRoutes);
+app.use('/api/login', authroutes);
+app.use('/api/signup', authroutes);
+app.use('/api/*', userRoutes);
 
 if (process.env.NODE_ENV === "production") {
 
