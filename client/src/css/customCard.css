@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Montserrat:wght@300&family=PT+Sans&family=Poppins:wght@300&family=Sora&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+.custom{ 
+    width: 160px;
+    height: 265px;
+    transition: transform .2s;
+    margin: 10px 0px 10px 0px;
+    /* padding: 7px; */
+    /* background-color: #121314;  */
+}
+.custom:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    cursor: pointer;
+}
+/* .card-img-top{
+    width: 95%;
+    margin: auto;
+} */
+.panel-container{
+    padding-left: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-right: 5px;
+    /* background-color: #121314; */
+}
+
+/* not needed now */
+.row a{
+    font-family: "Josefin Sans", sans-serif !important;
+    text-decoration: none;
+    color: black;
+}
+/* .row{
+    background-color: lavender;
+} */
+/* .category{
+    text-align: justify;
+    margin-bottom: -8px;
+} */
+.row li{
+    margin-right: -10px;
+}
+hr{
+    margin-top: 8px;
+}
+.custom-body{
+    padding: 2px;
+    margin-top: 10px;
+}
+.custom-text{
+    margin-top: -5;
+}
+.clipText{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* MUI CARD ON HISTORY PAGE */
+/* .muicard:hover{
+    transform: scale(0.99);
+}
+.muicard{
+    transition: all 0.5s ease;
+} */
+/* .muicard{
+    background-color: lavender !important;
+} */
+.cardBox{
+    width: 55% !important;
+    text-align: center !important;
+    padding-bottom: 0 !important;
+    margin: auto !important;
+}
+.cardMedia{
+    /* background-color: lavender !important; */
+    width: 45% !important;
+    margin-right: 0 !important;
+    border-radius: 1rem !important;
+    /* height: 100% !important; */
+}
+.return-btn{
+    margin-top: 1.1rem !important;
+    padding: 0.4rem 1rem !important;
+    background-color: #213143f1 !important;
+    transition: all 0.2s ease;
+}
+.return-btn:active{
+    transform: scale(0.95);
+}
+
+/* search book page */
+.searchRow{
+    justify-content: space-around;
+
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amiri:ital@1&family=Caudex:ital@1&family=Corinthia:wght@700&family=Cormorant+Garamond:ital,wght@1,700&family=Inconsolata:wght@300&family=Italianno&family=Josefin+Sans:wght@300&family=Lexend&family=Lora&family=Lusitana&family=Martel:wght@600;700&family=Mitr&family=Montserrat:wght@300&family=Mukta&family=Nanum+Gothic&family=Nobile:ital,wght@1,500&family=PT+Sans&family=Playball&family=Poppins:wght@300&family=Sarabun:ital,wght@1,500&family=Sora&family=Work+Sans:wght@300;400&display=swap');
+
+.home-container{
+    width: 99.3vw;
+    height: 91vh;
+    position: relative;
+}
+.inner-div-1{
+    /* background-color: rgb(251, 249, 227); */
+    background-color: rgb(81, 65, 43);
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    /* opacity: 0; */
+}
+.inner-div-2{
+    background-color: #121314f3;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    /* opacity: 0; */
+}
+.img-container{
+    position: absolute;
+    margin: auto;
+    top: 8%;
+    left: 2%;
+    z-index: 1;
+    width: 76%;
+    height: 84%;
+    border-radius: 0.5rem;
+    opacity: 0.95;
+    /* background-color:palevioletred; */
+}
+.quote-text{
+    /* position: fixed; */
+    /* right: 10px; */
+    width: 40%;
+    height: 100%;
+    transform: translateX(700px);
+    /* background-color:lightcyan; */
+    text-align: right;
+    font-style: italic;
+    padding: 1.5rem 3.5rem;
+    font-size: 61px !important;
+    line-height: 5.7rem;
+}
+.quote-text2{
+    width: 35%;
+    height: 10%;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 22px !important;
+    transform: translateY(-55px);
+    border-radius: 0.5rem;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.45rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: rgba(29, 52, 84, 0.759);
+    color: white;
+}
+.quote-text p{
+    /* font-family: 'Mukta', sans-serif !important; */
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Amiri', serif !important; */
+}
+.quote-text2 p{
+    font-family: 'Inconsolata', monospace !important;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Montserrat:wght@300&family=PT+Sans&family=Poppins:wght@300&family=Sora&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+.lib1, .lib2,.lib3{
+    font-family: 'Poppins', "sans-serif" !important;
+}
+.loginBtn, .signupBtn{
+  font-family: 'PT Sans', sans-serif !important;
+  /* font-weight: bold !important; */
+}
+/* .lib2,.lib3{
+  background-color: #121314f3;
+  color: white;
+}
+.lib2:active,.lib3:active{
+  box-shadow: 1px 1px #3a3d41f3 !important;
+} */
+.lib2:hover,.lib3:hover{
+  transform: scale(0.96);
+}
+.lib1{
+  color: #121314f3;
+  font-weight: bold;
+}
+.special-nav{
+  padding: 0.2rem 0 !important;
+  box-sizing: border-box !important;
+}

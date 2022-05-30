@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Montserrat:wght@300&family=PT+Sans&family=Poppins:wght@300&family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amiri:ital@1&family=Caudex:ital@1&family=Corinthia:wght@700&family=Cormorant+Garamond:ital,wght@1,700&family=Inconsolata:wght@300&family=Italianno&family=Josefin+Sans:wght@300&family=Lexend&family=Lora&family=Lusitana&family=Martel:wght@600;700&family=Mitr&family=Montserrat:wght@300&family=Mukta&family=Nanum+Gothic&family=Nobile:ital,wght@1,500&family=PT+Sans&family=Playball&family=Poppins:wght@300&family=Quicksand&family=Sarabun:ital,wght@1,500&family=Sora&family=Work+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  #triangle-up {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+    right: 0;
+    margin-right: 120px;
+
+  }
+  /* html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #f2f2f2;
+    /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+   */
+  ::selection{
+    background: #4158d0;
+    color: #fff;
+  }
+  .wrapper{
+    width: 340px;
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    /* float: right; */
+    right: 2px;
+    z-index: 2 !important;
+    top: 10vh;
+    /* margin-right: 10px; */
+    /* margin-top: 15px; */
+    position: absolute !important;
+  }
+
+  .wrapper form{
+    padding: 15px 18px 18px 18px;
+  }
+  .wrapper form .field{
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  .wrapper form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  .wrapper form .field input:focus,
+  form .field input:valid{
+    border-color: #4158d0;
+  }
+  .wrapper form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  form .field input:focus ~ label,
+  form .field input:valid ~ label{
+    top: 0%;
+    font-size: 16px;
+    color: rgb(81, 65, 43);
+    background: white;
+    border-radius: 0.6rem;
+    padding: 0.1rem 0.5rem;
+    transform: translateY(-50%);
+  }
+  form .content{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  form .content .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form .content input{
+    width: 15px;
+    height: 15px;
+    background: red;
+  }
+  form .content label{
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+  }
+  form .content .pass-link{
+    color: "";
+  }
+  form .field input[type="submit"]{
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif !important;
+    /* font-weight: 500; */
+    cursor: pointer;
+    background:rgba(29, 52, 84, 0.926);
+    transition: all 0.3s ease;
+    font-family: "Josefin Sans", sans-serif !important;
+
+  }
+  form .field input[type="submit"]:active{
+    transform: scale(0.95);
+  }
+  form .signup-link{
+    /* color: #262626; */
+    color: whitesmoke;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif !important;
+  }
+  form .pass-link a,
+  form .signup-link a{
+    color: #9ac0ef;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif !important;
+  }
+  form .pass-link a:hover,
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+ 

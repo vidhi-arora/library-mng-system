@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Josefin+Sans:wght@300&family=Lexend&family=Lusitana&family=Mitr&family=Montserrat:wght@300&family=Mukta&family=PT+Sans&family=Poppins:wght@300&family=Sora&display=swap');
+
+/* .temp {
+    background-color: #F3E5F5;
+    padding: 8px 0px 8px 0px !important;
+    width: 100%;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+    border: none !important;
+    border-bottom: 1px solid #F3E5F5 !important;
+    font-size: 18px !important;
+    color: #000 !important;
+    font-weight: 300
+}
+
+.temp:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #D32F2F !important;
+    outline-width: 0;
+    font-weight: 400
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+} */
+
+.cardd {
+    border-radius: 0;
+    border: none;
+    position: relative;
+    /* background-color: antiquewhite; */
+    /* background-color: aqua; */
+}
+
+.card1 {
+    width: 50%;
+    transform: translateX(2%);
+}
+
+.card2 {
+    width: 50%;
+    height: 83vh;
+    /* transform: translateX(-10%); */
+    /* background-color: #E8EAF6 */
+}
+
+#image {
+    width: 83%;
+    height: 100%;
+    /* margin: auto; */
+    border-radius: 8px;
+}
+
+/* #logo {
+    position: absolute
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem
+}
+
+ .form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 0;
+    transition: all 300ms;
+    opacity: 0.5
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    font-size: 80%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1
+}
+
+.btn-gray {
+    border-radius: 50px;
+    color: #fff;
+    background-color: #BDBDBD;
+    padding: 8px 40px
+}
+
+.btn-gray:hover {
+    color: #fff;
+    background-color: #D32F2F
+}
+
+.templink {
+    color: #000
+} */
+
+.header{
+  font-family: 'Amiri', serif !important;
+  margin-top: 6rem;
+  margin-bottom: 0rem !important;
+  margin-left: -12px;
+}
+.header.addbook{
+  margin-top: 5.8rem !important;
+}
+.reqHeader{
+  margin-left: -12px;
+  margin-top: 1rem;
+  font-family: 'Amiri', serif !important;
+}
+
+  ::selection{
+    background: #121314;
+    color: #fff;
+  }
+ 
+
+ .requestForm{
+    padding: 25px 30px 30px 30px;
+  }
+  .requestForm.addbook{
+    margin-left: 10px !important;
+    margin-right: 15px;
+    margin-top: 20px !important;
+    padding-top: 0px;
+  }
+  .requestForm .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  .requestForm .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    color: #969595 !important;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  .requestForm .field input:focus,
+  .requestForm .field input:valid{
+    border-color: #121314 !important;
+  }
+  .requestForm .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  .requestForm .field input:focus ~ label,
+  .requestForm .field input:valid ~ label{
+    top: 0%;
+    font-size: 16px;
+    color: #121314 !important;
+    background: #fff;
+    transform: translateY(-50%);
+  }
+  .requestForm .content{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .requestForm .content .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .requestForm .content input{
+    width: 15px;
+    height: 15px;
+    background: red;
+  }
+  .requestForm .content label{
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+  }
+  .requestForm .content .pass-link{
+    color: "";
+  }
+  .requestForm .field input[type="submit"]{
+    color: #fff !important;
+    border: none;
+    padding-left: 0;
+    /* margin-top: 1px !important; */
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif !important;
+    background:#212325 !important;
+    transition: all 0.3s ease;
+  }
+  .requestForm .field input[type="submit"]:active{
+    transform: scale(0.95);
+  }
+ 
+  @media  screen and (max-width: 1024px) {
+    .card1,.card2{
+        width: 100%;
+        transform: translateX(0%);
+    }
+    #image{
+        width: 100%;
+    }
+}
+
+.requestForm .field.addbook{
+  width: 48%;
+  margin-right: 2%;
+  display: inline-block;
+}
+.requestForm .field.addbook input{
+  margin-bottom: 1rem;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.requestForm .field.updateBook{
+  width: 100%;
+}
+/* .requestForm .field.addbook input:focus{
+  box-shadow: 0px 1px 3px #8b8e91;
+} */
+.card2.addbook{
+  transform: translateX(-2%) translateY(2%);
+  height: 605px;
+  width: 44%;
+}
+.card2.updateBookImage{
+  height: 600px;
+}
+
+@media  screen and (max-width: 1024px) {
+  .card2.addbook{
+      width: 100%;
+      transform: translateX(1%);
+  }
+}
+
+/* requestedsBooks page */
+
+.acceptBtn{
+  background-color: #1f3042ed;
+  color: whitesmoke !important;
+}
+.rejectBtn{
+  color: whitesmoke !important;
+}
+.reqText{
+  color: #8b8a8a;
+}
+.requestBookRow{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.requestBookRow a{
+  padding: auto 2rem;
+  font-family: "Mukta", sans-serif !important;
+  font-size: 17px !important;
+}
+.reqBookCard{
+  border: 1px solid #121314;
+  box-shadow: 2px 2px 5px rgb(177, 176, 176) ;
+}
+
+.reqStatusImg{
+  width: 100%;
+  height: 100%;
+}
+.reqtable td{
+  line-height: 40px;
+}
+
+@media  screen and (max-width: 1024px){
+  .acceptBtn{
+    margin-right: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+/* .reqBookheader{
+  box-shadow: 0 2px 10px -5px #333 inset;
+} */

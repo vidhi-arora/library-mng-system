@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap");
+
+.bookCard{
+  margin: 4rem auto auto auto !important;
+  height: auto !important;
+  /* max-height: 600px !important; */
+  box-shadow: inset 0 0 20px rgba(33,33,33,.2); 
+  /* margin-top: 10rem; */
+}
+.cardRow{
+  height: 100% !important;
+}
+.cardImage{
+  height: auto;
+  /* padding: 15px; */
+}
+.cardText{
+  font-size: 17px !important;
+}
+.cardBody{
+  padding-top: 3rem;
+  height: 100%;
+  margin-bottom: 2rem!important;
+}
+.img-fluid{
+  height: 100%;
+  width: 100%;
+  /* margin-left: 2rem;
+  margin-top: 2rem; */
+}
+.rounded-start {
+  /* border-bottom-left-radius: 0.25rem!important;
+  border-top-left-radius: 0.25rem!important; */
+  border-radius: 0.25rem;
+}
+.issue-btn{
+  font-family:  "PT Sans", sans-serif !important;
+  padding: 3% 6% !important;
+  display: block !important;
+  width: 58% !important;
+  border-radius: 38px !important;
+  margin-left: 4.8rem !important;  
+}
+.issue-btn:hover, .delete-btn:hover{
+  transform: scale(1.02);
+}
+.issued{
+  background-color: aliceblue;
+  box-shadow: 2px 2px 7px rgb(1, 47, 87) inset;
+}
+.disabled{
+  cursor: not-allowed !important;
+}
+
+.delete-btn{
+  font-family:  "PT Sans", sans-serif !important;
+  padding: 3% 4% !important;
+  display: inline-block !important;
+  width: 36% !important;
+  border-radius: 38px !important;
+  margin-top: 0.3rem;
+  /* margin-left: 4rem !important;   */
+}
+
+.bookDetails{
+  text-align: left;
+  margin: 3rem auto 2rem 3rem;
+  /* font-family: 'Josefin Sans', sans-serif !important; */
+}
+.bookDetails p{
+  /* margin: auto !important; */
+  /* text-align: center; */
+  padding-left: 2rem;
+  
+}
+.titles{
+  font-weight: bold;
+  display: inline-block;
+  min-width: 6rem;
+}
+.copy{
+  padding-left: 1rem !important;
+}
+
+@media  screen and (max-width: 1024px) {
+  .bookCard{
+    margin: auto !important;
+    height: auto !important;
+  }
+}
+
+/* .card-image{
+  height: 100% !important;
+} */
+
+
+/* .wrapperr {
+    height: 420px;
+    width: 654px;
+    margin: 50px auto;
+    border-radius: 7px 7px 7px 7px;
+     VIA CSS MATIC https://goo.gl/cIbnS 
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-img {
+    float: left;
+    height: 420px;
+    width: 327px;
+  }
+  
+  .product-img img {
+    border-radius: 7px 0 0 7px;
+  }
+  
+  .product-info {
+    float: left;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
+  }
+  
+  .product-text {
+    height: 300px;
+    width: 327px;
+  }
+  
+  .product-text h1 {
+    margin: 0 0 0 38px;
+    padding-top: 52px;
+    font-size: 34px;
+    color: #474747;
+  }
+  
+  .product-text h1,
+  .product-price-btn p {
+    font-family: 'Bentham', serif;
+  }
+  
+  .product-text h2 {
+    margin: 0 0 47px 38px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: 0.2em;
+  }
+  
+  .product-text p {
+    height: 125px;
+    margin: 0 0 0 38px;
+    font-family: 'Playfair Display', serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+  }
+  
+  .product-price-btn {
+    height: 103px;
+    width: 327px;
+    margin-top: 17px;
+    position: relative;
+  }
+  
+  .product-price-btn p {
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    height: 50px;
+    font-family: 'Trocchi', serif;
+    margin: 0 0 0 38px;
+    font-size: 28px;
+    font-weight: lighter;
+    color: #474747;
+  }
+  
+ .product-price-btn span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+  
+  .product-price-btn button {
+    float: right; 
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #9cebd5;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .product-price-btn button:hover {
+    background-color: #79b0a1;
+  } */

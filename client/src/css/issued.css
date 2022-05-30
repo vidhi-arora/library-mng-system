@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Josefin+Sans:wght@300&family=Lexend&family=Lusitana&family=Mitr&family=Montserrat:wght@300&family=Mukta&family=PT+Sans&family=Poppins:wght@300&family=Sora&display=swap');
+
+.bookNav{
+    padding: 10px 6px 2px 6px !important;
+    /* padding-top: 14px !important; */
+    border-radius: 0.35rem ;
+    margin-left: -10px !important;
+    margin-bottom: 2rem;
+    margin-top: 0.28rem;
+    /* font-family: "Montserrat", sans-serif !important; */
+}
+.bookNav h4{
+    font-family: 'Amiri', serif !important;
+}
+th{
+    font-family: 'Mukta', sans-serif !important;
+    font-size: 16px;
+}
+td{
+    vertical-align: middle !important;
+    font-family: 'Lusitana', serif !important;
+}
+td button{
+    font-family: 'Amiri', serif !important;
+    /* font-size: 16px !important; */
+}
+td button:hover{
+    transform: scale(1.03);
+}
+.returnBtn{
+    padding: 0.4rem 0.6rem !important;
+    font-size: 15px !important;
+}
+
+/* history grid */
+.return-date-text{
+    color: red !important;
+}
+.returnBookRow:hover .return-date-text{
+    color: red !important;
+}
+
+@media screen and (max-width: 914px){
+    .no-data{
+        width: 300px;
+        height: 250px;
+    }
+    .bookNav{
+        margin-left: 0px !important;
+    }
+}
+/* Books Read Page */
