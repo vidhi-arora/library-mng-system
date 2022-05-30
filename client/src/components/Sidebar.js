@@ -60,7 +60,7 @@ export const Sidebar = () => {
                 <div className='logoutDiv'>
                     {/* <div className='user'></div> */}
                     <LogoutIcon sx={{ color: 'white', fontSize: 29 }} />
-                    <NavLink className="logout" to="/libmngsystem" onClick={logout}> Logout</NavLink>
+                    <NavLink className="logout" to="/" onClick={logout}> Logout</NavLink>
                 </div>
 
             </div>

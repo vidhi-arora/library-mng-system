@@ -36,10 +36,10 @@ function App() {
           <Routes>
 
             {/* when role not specified, nvigating to any link other than login/signup, will navigate to login */}
-            <Route path="*" element={<Navigate replace to="/libmngsystem" />} />
+            <Route path="*" element={<Navigate replace to="/" />} />
 
             {/* 1. Homepage Route */}
-            <Route path="/libmngsystem" element={<HomePage />}>
+            <Route path="/" element={<HomePage />}>
               {/* <Route path="/login" element={<LoginCard />} /> */}
               {/* <Route path="/signup" element={<SignupCard />} /> */}
             </Route>
@@ -78,7 +78,7 @@ function App() {
                 </> :
                 <>
                   {/* disable switching of roles */}
-                  <Route path="*" element={<Navigate replace to="/libmngsystem" />} />
+                  <Route path="*" element={<Navigate replace to="/" />} />
                 </>
             }
 
