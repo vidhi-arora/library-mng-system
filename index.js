@@ -28,16 +28,18 @@ const port = process.env.PORT || 3500;
 
 app.use(bodyparse.json());
 // app.use(cors());
-app.use(express.static("/../client/build"));
 
 app.use('/api/*', authroutes);
 app.use('/api/*', userRoutes);
 
 if (process.env.NODE_ENV === "production") {
+
+    app.use(express.static("client/build"));
+
     const path = require("path");
 
     app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname + "/../client/build/index.html"));
+        res.sendFile(path.resolve(__dirname + "client/build/index.html"));
     });
 }
 
