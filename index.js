@@ -30,8 +30,8 @@ app.use(bodyparse.json());
 // app.use(cors());
 app.use(express.static("/../client/build"));
 
-app.use(authroutes);
-app.use(userRoutes);
+app.use('/api/*', authroutes);
+app.use('/api/*', userRoutes);
 
 if (process.env.NODE_ENV === "production") {
     const path = require("path");
