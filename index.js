@@ -32,7 +32,21 @@ app.use(bodyparse.json());
 app.use('/api/login', authroutes);
 app.use('/api/signup', authroutes);
 
-app.use(userRoutes);
+app.use('/api/getuserfine', userRoutes);
+app.use('/api/getissuebooks', userRoutes);
+app.use('/api/issued-books', userRoutes);
+app.use('/api/search/:key', userRoutes);
+app.use('/api/getreturnbooks', userRoutes);
+app.use('/api/searchs/:key/:value', userRoutes);
+app.use('/api/searchby/isbn/:key', userRoutes);
+app.use('/api/delete-issue', userRoutes);
+app.use('/api/request', userRoutes);
+app.use('/api/getrequest', userRoutes);
+app.use('/api/updaterequeststatus', userRoutes);
+app.use('/api/getuserrequests', userRoutes);
+app.use('/api/addbook', userRoutes);
+app.use('/api/deletebook', userRoutes);
+app.use('/api/updatebook', userRoutes);
 
 if (process.env.NODE_ENV === "production") {
 
