@@ -226,7 +226,6 @@ export const AuthProvider = ({ children }) => {
                 headers: {
                     Authorization: `Bearer ${token}`
                 },
-                baseURL: 'https://library-mng-system.herokuapp.com/api'
             });
             // console.log(response.data);
             setUserRequests(response.data);

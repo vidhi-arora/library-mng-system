@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === "production") {
 
 //changed the default baseURL only for login and signup requests in order to use diff router for authroutes and userRoutes
 app.use('/auth/', authroutes);
-app.use('/api/', userRoutes);
+app.use('/user/', userRoutes);
 
 
 const dbUri = process.env.MONGODB_URI;
