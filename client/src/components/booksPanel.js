@@ -28,7 +28,7 @@ export const BooksPanel = (props) => {
         }
     };
 
-    console.log(props.data);
+    // console.log(props.data);
     const bookList = props.data.map((book, index) => <CustomCard details={book} key={index} />)
 
     return (

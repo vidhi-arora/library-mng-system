@@ -76,7 +76,7 @@ export const AuthProvider = ({ children }) => {
                 });
             //   dispatch({type:'get_books',payload:response.data})
             // console.log(response);
-            console.log(response.data);
+            // console.log(response.data);
 
             if (id === 'Classics') {
                 setClassics(response.data);

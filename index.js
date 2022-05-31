@@ -33,7 +33,6 @@ app.use(bodyparse.json());
 app.use('/auth/', authroutes);
 app.use('/user/', userRoutes);
 
-
 if (process.env.NODE_ENV === "production") {
 
     app.use(express.static("client/build"));

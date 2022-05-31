@@ -19,7 +19,7 @@ import { HomePage } from './screens/HomePage';
 function App() {
 
   const { role } = useContext(AuthContext);
-  console.log(role === 'admin');
+  // console.log(role === 'admin');
   // console.log(token ? role : "null");
 
   return (
