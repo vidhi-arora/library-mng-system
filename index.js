@@ -40,8 +40,8 @@ if (process.env.NODE_ENV === "production") {
     });
 }
 
-app.use(['/api/login', '/api/signup'], authroutes);
-app.use('/api/', userRoutes);
+app.use(authroutes);
+app.use(userRoutes);
 
 
 const dbUri = process.env.MONGODB_URI;

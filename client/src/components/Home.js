@@ -112,14 +112,14 @@ export const Home = () => {
                         <h1 className='homeh1 extra'>Login</h1>
 
                         <div className="field">
-                            <input type="email" id='email' onChange={(e) => setLoginEmail(e.target.value)} autoComplete='off'
+                            <input type="email" id='loginemail' onChange={(e) => setLoginEmail(e.target.value)} autoComplete='off'
                                 required />
-                            <label htmlFor='email'>Email Address</label>
+                            <label htmlFor='loginemail'>Email Address</label>
                         </div>
                         <div className="field">
-                            <input type="password" id='password' onChange={(e) => setLoginPassword(e.target.value)} autoComplete='off'
+                            <input type="password" id='loginpassword' onChange={(e) => setLoginPassword(e.target.value)} autoComplete='off'
                                 required />
-                            <label htmlFor='password'>Password</label>
+                            <label htmlFor='loginpassword'>Password</label>
                         </div>
 
                         <button className='homeBtn formBtn'>Login</button>
