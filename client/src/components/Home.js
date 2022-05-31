@@ -25,11 +25,12 @@ export const Home = () => {
         props.preventDefault();
 
         try {
-            axios.defaults.baseURL = 'https://library-mng-system.herokuapp.com/auth'
+            // axios.defaults.baseURL = 'https://library-mng-system.herokuapp.com/auth'
 
             const res = await axios.post('/login', JSON.stringify({ loginEmail, loginPassword }), {
                 headers: { 'Content-Type': 'application/json' },
-                withCredentials: false
+                withCredentials: false,
+                baseURL: 'https://library-mng-system.herokuapp.com/auth'
             });
             // console.log(res.data.user.role);
 
@@ -55,12 +56,12 @@ export const Home = () => {
     const signup = async (props) => {
         props.preventDefault();
         try {
-            axios.defaults.baseURL = 'https://library-mng-system.herokuapp.com/auth'
 
             const response = await axios.post('/signup', JSON.stringify({ name, signupEmail, signupPassword }),
                 {
                     headers: { 'Content-Type': 'application/json' },
-                    withCredentials: false
+                    withCredentials: false,
+                    baseURL: 'https://library-mng-system.herokuapp.com/auth'
                 });
 
             console.log("user created");
