@@ -24,8 +24,6 @@ module.exports = (req, res, next) => {
     }
     try {
         const token = authorization.replace('Bearer ', '');
-        var decoded = jwt_decode(token);
-        console.log(decoded);
 
         jwt.verify(token, secret, async (err, payload) => {
             if (err)
