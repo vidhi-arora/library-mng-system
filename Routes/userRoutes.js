@@ -37,8 +37,11 @@ const checkFine = (book) => {
 }
 
 const route = express.Router();
-route.use('/api/', requireAuth);
+// route.use('/api/', requireAuth);
 
+route.get('/test', async (req, res) => {
+    res.send("test successful");
+})
 
 route.get('/getuserfine', async (req, res) => {
 
