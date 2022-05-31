@@ -40,7 +40,8 @@ if (process.env.NODE_ENV === "production") {
     });
 }
 
-app.use('/\/api\/login|\/api\/signup/', authroutes);
+//changed the default baseURL only for login and signup requests in order to use diff router for authroutes and userRoutes
+app.use('/auth/', authroutes);
 app.use(userRoutes);
 
 
