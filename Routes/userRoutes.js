@@ -37,7 +37,7 @@ const checkFine = (book) => {
 }
 
 const route = express.Router();
-route.use('/user/', requireAuth);
+route.use(requireAuth);
 
 //test route
 route.get('/test', async (req, res) => {
@@ -341,7 +341,7 @@ route.get('/getuserrequests', async (req, res) => {
         // console.log(data);
     }
     catch (e) {
-        console.log(e.response.data);
+        console.log(e.response);
     }
 })
 
