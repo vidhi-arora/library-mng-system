@@ -40,7 +40,7 @@ if (process.env.NODE_ENV === "production") {
     });
 }
 
-app.use('/api/', authroutes);
+app.use(['/api/login', '/api/signup'], authroutes);
 app.use('/api/', userRoutes);
 
 
