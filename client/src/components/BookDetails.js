@@ -36,7 +36,7 @@ export const BookDetails = () => {
             }
             return true;
         })
-        console.log("flag = " + flag);
+        // console.log("flag = " + flag);
 
         if (response.data[0].copies < 1) {
             console.log('btn value changed');

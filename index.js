@@ -31,7 +31,7 @@ app.use(bodyparse.json());
 
 //changed the default baseURL only for login and signup requests in order to use diff router for authroutes and userRoutes
 app.use('/auth/', authroutes);
-app.use('/user/', userRoutes);
+app.use('/api/', userRoutes);
 
 if (process.env.NODE_ENV === "production") {
 

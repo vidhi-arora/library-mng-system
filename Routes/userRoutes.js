@@ -40,9 +40,9 @@ const route = express.Router();
 route.use(requireAuth);
 
 //test route
-route.get('/test', async (req, res) => {
-    res.send("test successful");
-})
+// route.get('/test', async (req, res) => {
+//     res.send("test successful");
+// })
 
 route.get('/getuserfine', async (req, res) => {
 
@@ -202,7 +202,7 @@ route.get('/searchs/:key/:value', async (req, res) => {
             { [key]: { $regex: req.params.value, $options: "i" } }
         ]
     })
-    console.log(data.length);
+    // console.log(data.length);
     res.send(data);
 })
 
@@ -217,11 +217,11 @@ route.get('/searchs/:key/:value', async (req, res) => {
 
 route.get('/searchby/isbn/:key', async (req, res) => {
     // const query = req.params.field;
-    console.log(req.params.key);
+    console.log("isbn = " + req.params.key);
     // console.log(query);
     let data = await Books.find({ isbn: req.params.key })
     const copy = data[0].copies;
-    console.log(copy);
+    console.log("copies = " + copy);
     // console.log(data);
     res.send(data);
 })
@@ -235,7 +235,7 @@ route.post('/delete-issue', async (req, res) => {
     try {
         console.log("searching..");
         const book = await IssuedBooks.findOneAndDelete({ isbn: isbn, userId: req.user._id });
-        console.log("deleted book -" + book);
+        console.log("deleted book ->" + book);
 
         const newbook = new ReturnedBooks({ name: book.Name, author: book.author, isbn: book.isbn, issuedOn: book.issuedOn, dueDate: book.dueDate, returnedOn: getDate(), image: book.image, userId: req.user._id });
         await newbook.save();

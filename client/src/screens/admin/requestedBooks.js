@@ -6,7 +6,7 @@ import noDataImg from '../../images/bookheaders/norecordfound.png';
 
 export const RequestedBooks = () => {
 
-    const { token, requested, setRequestStatus, getRequestedBooks } = useContext(AuthContext);
+    const { requested, setRequestStatus, getRequestedBooks } = useContext(AuthContext);
     const navigate = useNavigate();
     // const { addToast } = useToasts();
 

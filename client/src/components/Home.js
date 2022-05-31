@@ -1,4 +1,3 @@
-import jwt_decode from "jwt-decode";
 import { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
@@ -41,8 +40,10 @@ export const Home = () => {
             setRole(res.data.user.role);
             setToken(res.data.token);
 
-            var decoded = jwt_decode(res.data.token);
-            console.log(decoded);
+            //used jwt-decode package to decode the jwt token
+            // import jwt_decode from "jwt-decode";
+            // var decoded = jwt_decode(res.data.token);
+            // console.log(decoded);
 
             setLoginEmail('');
             setLoginPassword('');

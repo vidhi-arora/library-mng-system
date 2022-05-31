@@ -19,7 +19,7 @@ module.exports = (req, res, next) => {
     // return res.send(`auth = ${authorization}`);
 
     if (!authorization) {
-        console.log("urgh!");
+        console.log("urgh! Not authorized");
         return res.status(422).send({ error: "you must be Logged in" });
     }
     try {

@@ -25,13 +25,11 @@ export const AddBook = () => {
     }, [])
 
     const submitHandler = (props) => {
-        // props.preventDefault();
+        props.preventDefault();
         console.log(book);
-        console.log(location);
-        // console.log(flag);
+        // console.log(location);
 
         addbook(book);
-        console.log(location);
 
         if (location.state !== null) {
             setRequestStatus(location.state._id, "Approved");
