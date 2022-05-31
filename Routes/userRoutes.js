@@ -181,7 +181,7 @@ route.get('/search/:key', async (req, res) => {
 
     let data = await Books.find({
         "$or": [
-            { category: { $regex: req.params.key, $options: "i" } }
+            { category: { $regex: req.params.key } }
         ]
         // , $expr: { $lt: [0.7, { $rand: {} }] }
     }).limit(15);

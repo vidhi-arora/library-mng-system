@@ -16,7 +16,7 @@ export const SearchBook = (props) => {
     const { searchbook, results } = React.useContext(AuthContext);
 
     // console.log("--->" + option, value, searchValue);
-    console.log(results);
+    // console.log(results);
 
     //to set search params
     const params = [
@@ -35,7 +35,7 @@ export const SearchBook = (props) => {
         //searchbook api
         searchbook(option, searchValue);
 
-        console.log(results.length);
+        // console.log(results.length);
         navigate(`${pathname}?${createSearchParams(params)}`);
     }
 
