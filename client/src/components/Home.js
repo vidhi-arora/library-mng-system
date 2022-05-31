@@ -40,6 +40,9 @@ export const Home = () => {
             setRole(res.data.user.role);
             setToken(res.data.token);
 
+            var decoded = jwt_decode(res.data.token);
+            console.log(decoded);
+
             setLoginEmail('');
             setLoginPassword('');
             navigate('/dashboard/viewBooks');
