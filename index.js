@@ -29,6 +29,11 @@ const port = process.env.PORT || 3500;
 app.use(bodyparse.json());
 // app.use(cors());    
 
+//changed the default baseURL only for login and signup requests in order to use diff router for authroutes and userRoutes
+app.use('/auth/', authroutes);
+app.use('/user/', userRoutes);
+
+
 if (process.env.NODE_ENV === "production") {
 
     app.use(express.static("client/build"));
@@ -39,10 +44,6 @@ if (process.env.NODE_ENV === "production") {
         res.sendFile(path.resolve(__dirname + "/client/build/index.html"));
     });
 }
-
-//changed the default baseURL only for login and signup requests in order to use diff router for authroutes and userRoutes
-app.use('/auth/', authroutes);
-app.use('/user/', userRoutes);
 
 
 const dbUri = process.env.MONGODB_URI;
