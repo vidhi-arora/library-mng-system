@@ -25,7 +25,7 @@ export const AddBook = () => {
     }, [])
 
     const submitHandler = (props) => {
-        props.preventDefault();
+        // props.preventDefault();
         console.log(book);
         // console.log(location);
 

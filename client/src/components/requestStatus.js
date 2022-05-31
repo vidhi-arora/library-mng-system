@@ -13,7 +13,7 @@ export const RequestStatus = () => {
 
     const reqList = userRequests.map((request, index) =>
         <tr key={index}>
-            <th scope="row">{index + 1}</th>
+            <th scope="row" style={{ verticalAlign: 'middle' }}>{index + 1}</th>
             <td>{request.name}</td>
             <td>{request.author}</td>
             <td>{request.requestedOn}</td>

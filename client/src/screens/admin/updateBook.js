@@ -22,7 +22,7 @@ export const UpdateBook = () => {
     }, [])
 
     const submitHandler = (props) => {
-        props.preventDefault();
+        // props.preventDefault();
         console.log(book);
 
         updateBook(book);
