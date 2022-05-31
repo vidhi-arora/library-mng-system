@@ -99,7 +99,7 @@ export const AuthProvider = ({ children }) => {
 
         }
         catch (e) {
-            console.log(e.response);
+            console.log(e);
         }
     }
 
