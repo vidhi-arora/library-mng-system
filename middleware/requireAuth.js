@@ -13,14 +13,10 @@ const secret = process.env.SECRET;
 
 module.exports = (req, res, next) => {
     const { authorization } = req.headers;
-    // console.log(req.body);
-    // req.send(req.headers);
-
-    // return res.send(`auth = ${authorization}`);
 
     if (!authorization) {
-        console.log("urgh! Not authorized");
-        return res.status(422).send({ error: "you must be Logged in" });
+        console.log("Not authorized");
+        return res.status(422).send({ error: "you must be logged in" });
     }
     try {
         const token = authorization.replace('Bearer ', '');

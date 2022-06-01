@@ -9,10 +9,6 @@ const jwt = require('jsonwebtoken');
 const route = express.Router();
 const secret = process.env.SECRET;
 
-// route.get('/', async (req, res) => {
-//     res.send("urghhhhhhhhhhhhhhhh");
-// })
-
 route.post('/signup', async (req, res) => {
     const { name, signupEmail, signupPassword, role } = req.body;
     const Email = signupEmail.toLowerCase();
