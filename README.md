@@ -1,3 +1,3 @@
-Library Management system
+# Library-Management-System
 
-A digital system developed using MERN STACK to manage a library.
+A library management system developed using MERN STACK
