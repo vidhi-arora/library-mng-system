@@ -7,7 +7,7 @@ const Fine = mongoose.model('Fine');
 const jwt = require('jsonwebtoken');
 
 const route = express.Router();
-const secret = process.env.SECRET || 'LIBRARY';
+const secret = process.env.SECRET;
 
 // route.get('/', async (req, res) => {
 //     res.send("urghhhhhhhhhhhhhhhh");
