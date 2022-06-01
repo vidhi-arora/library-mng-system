@@ -30,7 +30,7 @@ export const Home = () => {
             const res = await axios.post('/login', JSON.stringify({ loginEmail, loginPassword }), {
                 headers: { 'Content-Type': 'application/json' },
                 withCredentials: false,
-                // baseURL: 'https://library-mng-system.herokuapp.com/auth'
+                baseURL: 'https://library-mng-system.herokuapp.com/auth'
             });
             // console.log(res.data.user.role);
 
@@ -66,7 +66,7 @@ export const Home = () => {
                 {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: false,
-                    // baseURL: 'https://library-mng-system.herokuapp.com/auth'
+                    baseURL: 'https://library-mng-system.herokuapp.com/auth'
                 });
 
             console.log("user created");
